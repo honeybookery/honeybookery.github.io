@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Z. A. Aweke</title>
+  <meta name="description" content="Send a private message to author Z. A. Aweke.">
+  <meta property="og:title" content="Contact | Z. A. Aweke">
+  <meta property="og:url" content="https://honeybookery.com/contact.html">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html"><span>Z. A. Aweke</span></a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="framed.html">Framed!</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="narrow">
+        <h1>Say hello</h1>
+        <p class="lede">Questions about the book, press requests, or a note for the author? Send a message below.</p>
+
+        <div class="form-card">
+          <!--
+            TODO: REPLACE the action URL below with your real Formspree endpoint
+            (it looks like https://formspree.io/f/abcdwxyz).
+            Submissions go only to the email address on your Formspree account.
+            Nothing is displayed publicly on this site.
+          -->
+          <form id="contact-form" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+            <div class="field">
+              <label for="name">Your name</label>
+              <input type="text" id="name" name="name" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="email">Your email</label>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="topic">What's this about?</label>
+              <select id="topic" name="topic">
+                <option>A note for the author</option>
+                <option>Press or media</option>
+                <option>Schools, libraries, or bookstores</option>
+                <option>Something else</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="message">Your message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+
+            <!-- Spam trap: real people never see or fill this in -->
+            <div class="hp" aria-hidden="true">
+              <label for="_gotcha">Leave this field empty</label>
+              <input type="text" id="_gotcha" name="_gotcha" tabindex="-1" autocomplete="off">
+            </div>
+
+            <button class="btn btn-accent" type="submit" id="submit-btn">Send message</button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <p class="note"><strong>Your message is private.</strong> It goes straight to the author's inbox. Nothing you send is posted on this site, and there are no public comments. If you're under 13, please ask a parent or guardian to send the message for you.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>&copy; 2026 Z. A. Aweke. All rights reserved.</span>
+      <nav aria-label="Footer">
+        <a href="index.html">Home</a> &middot; <a href="framed.html">Framed!</a> &middot; <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/contact.js"></script>
+</body>
+</html>
