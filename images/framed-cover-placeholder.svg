@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 480" width="320" height="480" role="img" aria-label="Placeholder cover for Framed!">
+  <rect width="320" height="480" fill="#1f2a44"/>
+  <rect x="16" y="16" width="288" height="448" rx="6" fill="none" stroke="#ffd84d" stroke-width="3" stroke-dasharray="10 8"/>
+  <text x="160" y="130" text-anchor="middle" font-family="Georgia, serif" font-size="64" font-weight="700" fill="#ffd84d">Framed!</text>
+  <text x="160" y="190" text-anchor="middle" font-family="Georgia, serif" font-size="19" font-style="italic" fill="#fbf6ea">What happens when the principal</text>
+  <text x="160" y="216" text-anchor="middle" font-family="Georgia, serif" font-size="19" font-style="italic" fill="#fbf6ea">is not your pal?</text>
+  <circle cx="160" cy="320" r="52" fill="none" stroke="#fbf6ea" stroke-width="8"/>
+  <line x1="198" y1="358" x2="240" y2="400" stroke="#fbf6ea" stroke-width="10" stroke-linecap="round"/>
+  <text x="160" y="446" text-anchor="middle" font-family="Georgia, serif" font-size="20" letter-spacing="3" fill="#ffd84d">Z. A. AWEKE</text>
+</svg>
