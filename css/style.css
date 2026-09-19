@@ -175,13 +175,12 @@ a:hover { color: var(--pop); }
   .hero .wrap { grid-template-columns: 1.2fr 0.8fr; }
 }
 
-/* ---------- Cover ---------- */
-.cover {
-  width: min(320px, 80%);
+/* ---------- Book image (transparent cut-out of the paperback mockup) ---------- */
+.book-mock {
+  width: min(360px, 84%);
+  height: auto;
   margin-inline: auto;
-  border-radius: 8px;
-  box-shadow: var(--shadow), 10px 10px 0 var(--accent);
-  transform: rotate(2deg);
+  filter: drop-shadow(0 20px 18px rgba(31, 42, 68, 0.28));
 }
 
 /* ---------- Sections ---------- */
