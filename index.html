@@ -53,6 +53,33 @@
       </div>
     </section>
 
+    <!-- Launch countdown. To change the date/time, edit data-launch below
+         (ISO format with the Central Time offset, e.g. 2026-11-14T14:00:00-06:00). -->
+    <section class="launch" id="launch" aria-labelledby="launch-title">
+      <div class="wrap">
+        <div class="case-file" data-countdown data-launch="2026-11-14T00:00:00-06:00">
+          <span class="stamp" aria-hidden="true" data-cd-stamp>Top secret</span>
+          <span class="eyebrow">Case file: launch day</span>
+          <h2 id="launch-title" data-cd-title>The case opens in&hellip;</h2>
+          <p class="launch-date">Saturday, November 14, 2026</p>
+
+          <ol class="cd-grid" data-cd-clock aria-hidden="true">
+            <li class="cd-unit"><span class="cd-num" data-unit="days">--</span><span class="cd-label">Days</span></li>
+            <li class="cd-unit"><span class="cd-num" data-unit="hours">--</span><span class="cd-label">Hours</span></li>
+            <li class="cd-unit"><span class="cd-num" data-unit="minutes">--</span><span class="cd-label">Minutes</span></li>
+            <li class="cd-unit"><span class="cd-num" data-unit="seconds">--</span><span class="cd-label">Seconds</span></li>
+          </ol>
+          <p class="sr-only" data-cd-sr aria-live="polite">Framed launches Saturday, November 14, 2026.</p>
+
+          <p class="launch-note" data-cd-note>Mark your calendar &mdash; <em>Framed</em> launches during Children's Book Week!</p>
+          <div class="btn-row">
+            <a class="btn btn-accent" data-cd-ics href="#" download="framed-launch.ics">Add to my calendar</a>
+            <a class="btn btn-outline" href="framed.html" data-cd-more>Get the scoop</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="section alt" id="about">
       <div class="wrap bio-layout">
         <!-- Bio image: images/author-portrait.jpg. Swap the file (or remove this figure) any time. -->
@@ -90,7 +117,7 @@
 
     <section class="section alt">
       <div class="narrow" style="text-align:center">
-        <h2>Now available: Framed</h2>
+        <h2>Coming November 14: Framed</h2>
         <p>What happens when the principal is <em>not</em> your pal? Find out in the debut middle-grade novel for ages 8&ndash;12.</p>
         <div class="btn-row" style="justify-content:center">
           <a class="btn btn-accent" href="framed.html">Read more &amp; get the book</a>
@@ -107,5 +134,6 @@
       </nav>
     </div>
   </footer>
+  <script src="js/countdown.js"></script>
 </body>
 </html>
