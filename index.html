@@ -15,10 +15,23 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=3">
+  <link rel="stylesheet" href="css/style.css?v=4">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Event banner. Hides itself automatically after the event (see data-hide-after;
+       2026-11-15T00:00:00-06:00 = midnight Central after Nov 14). Delete this block any time. -->
+  <aside class="event-banner" id="event-banner" aria-label="Event announcement" data-hide-after="2026-11-15T00:00:00-06:00">
+    <a href="launch.html">Join us <strong>Nov 14</strong> for the FRAMED Book Launch &amp; Movie Morning! Free, seats limited. <span class="cta">Reserve your seat &rarr;</span></a>
+  </aside>
+  <script>
+    (function () {
+      var b = document.getElementById("event-banner");
+      var end = b && new Date(b.getAttribute("data-hide-after")).getTime();
+      if (b && Date.now() >= end) b.hidden = true;
+    })();
+  </script>
 
   <header class="site-header">
     <div class="wrap">
@@ -27,6 +40,7 @@
         <ul>
           <li><a href="index.html" aria-current="page">Home</a></li>
           <li><a href="framed.html">Framed</a></li>
+          <li><a href="launch.html">Book Launch</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
@@ -150,7 +164,7 @@
     <div class="wrap">
       <span>&copy; 2026 Z. A. Aweke. All rights reserved.</span>
       <nav aria-label="Footer">
-        <a href="index.html">Home</a> &middot; <a href="framed.html">Framed</a> &middot; <a href="contact.html">Contact</a>
+        <a href="index.html">Home</a> &middot; <a href="framed.html">Framed</a> &middot; <a href="launch.html">Book Launch</a> &middot; <a href="contact.html">Contact</a>
       </nav>
     </div>
   </footer>
