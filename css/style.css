@@ -563,8 +563,6 @@ textarea { min-height: 9rem; resize: vertical; }
   display: block;
   width: 100%;
   height: auto;
-  /* The mockup has a white backdrop; multiply lets it melt into the paper band. */
-  mix-blend-mode: multiply;
   transition: transform 0.3s ease;
 }
 .sneak-peek-figure a:hover img,
