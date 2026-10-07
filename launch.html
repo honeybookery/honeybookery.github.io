@@ -30,7 +30,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css?v=4">
 
-  <!-- schema.org Event. TODO: when registration opens, add "url": "REGISTRATION-LINK" inside "offers". -->
+  <!-- schema.org Event -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -61,7 +61,8 @@
       "name": "Free admission (registration required)",
       "price": "0",
       "priceCurrency": "USD",
-      "availability": "https://schema.org/InStock"
+      "availability": "https://schema.org/InStock",
+      "url": "https://www.eventbrite.com/e/framed-book-launch-movie-morning-with-author-z-a-aweke-tickets-2003066935124?aff=honeybookery"
     },
     "performer": { "@type": "Person", "name": "Z. A. Aweke" },
     "organizer": { "@type": "Person", "name": "Z. A. Aweke", "url": "https://honeybookery.com/" }
@@ -98,8 +99,7 @@
           <p class="event-when">B&amp;B Theatres Wylie 12, Wylie, TX</p>
           <p class="event-free">Free &middot; Seats limited</p>
           <div class="btn-row event-cta" style="justify-content:center">
-            <!-- TODO: when registration opens, change href="#reserve" to the registration link and add target="_blank" rel="noopener noreferrer". -->
-            <a class="btn btn-accent btn-lg" href="#reserve">Reserve Your Free Seats</a>
+            <a class="btn btn-accent btn-lg" href="https://www.eventbrite.com/e/framed-book-launch-movie-morning-with-author-z-a-aweke-tickets-2003066935124?aff=honeybookery" target="_blank" rel="noopener noreferrer">Reserve Your Free Seats<span class="sr-only"> (opens in a new tab)</span></a>
           </div>
         </div>
       </div>
@@ -195,13 +195,10 @@
     <section class="section" id="reserve">
       <div class="narrow" style="text-align:center">
         <h2>Save your seat</h2>
-        <p>Seating is limited, so reserve your free seats as soon as registration opens.</p>
-        <!-- TODO: when registration opens, replace this note with the button:
-          <div class="btn-row event-cta" style="justify-content:center">
-            <a class="btn btn-accent btn-lg" href="REGISTRATION-LINK" target="_blank" rel="noopener noreferrer">Reserve Your Free Seats<span class="sr-only"> (opens in a new tab)</span></a>
-          </div>
-        -->
-        <p class="note" style="margin-top:0"><strong>Registration opens soon!</strong> Check back here shortly to reserve your free seats.</p>
+        <p>Seating is limited, so reserve your free seats today.</p>
+        <div class="btn-row event-cta" style="justify-content:center">
+          <a class="btn btn-accent btn-lg" href="https://www.eventbrite.com/e/framed-book-launch-movie-morning-with-author-z-a-aweke-tickets-2003066935124?aff=honeybookery" target="_blank" rel="noopener noreferrer">Reserve Your Free Seats<span class="sr-only"> (opens in a new tab)</span></a>
+        </div>
       </div>
     </section>
   </main>
