@@ -552,3 +552,25 @@ textarea { min-height: 9rem; resize: vertical; }
 @media (max-width: 560px) {
   .event-cta .btn { width: 100%; }
 }
+
+/* ---------- Book page: sneak peek (open-book spread) ---------- */
+.sneak-peek-head { text-align: center; max-width: 620px; margin: 0 auto 1rem; }
+.sneak-peek-head h2 { margin-top: 0.25rem; }
+.sneak-peek-head p { color: var(--ink-soft); }
+.sneak-peek-figure { margin: 0; text-align: center; }
+.sneak-peek-figure a { display: block; max-width: 900px; margin-inline: auto; border-radius: var(--radius); }
+.sneak-peek-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  /* The mockup has a white backdrop; multiply lets it melt into the paper band. */
+  mix-blend-mode: multiply;
+  transition: transform 0.3s ease;
+}
+.sneak-peek-figure a:hover img,
+.sneak-peek-figure a:focus-visible img { transform: translateY(-4px) scale(1.01); }
+.sneak-peek-figure figcaption { margin-top: 0.25rem; font-size: 0.92rem; color: var(--ink-soft); font-style: italic; }
+@media (prefers-reduced-motion: reduce) {
+  .sneak-peek-figure img { transition: none; }
+  .sneak-peek-figure a:hover img, .sneak-peek-figure a:focus-visible img { transform: none; }
+}
