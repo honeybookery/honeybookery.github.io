@@ -249,7 +249,7 @@ input[type="text"], input[type="email"], select, textarea {
   padding: 0.7rem 0.85rem;
 }
 textarea { min-height: 9rem; resize: vertical; }
-.hp { position: absolute; left: -9999px; height: 0; width: 0; overflow: hidden; } /* spam honeypot */
+.hp { display: none !important; } /* spam honeypot: display:none so browser autofill skips it */
 .form-status { margin-top: 1rem; font-weight: 700; min-height: 1.5em; }
 .form-status.ok { color: #1c6b3a; }
 .form-status.err { color: var(--pop); }
