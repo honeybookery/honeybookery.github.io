@@ -65,8 +65,9 @@
               <textarea id="message" name="message" required></textarea>
             </div>
 
-            <!-- Spam trap: real people never see or fill this in -->
-            <div class="hp" aria-hidden="true">
+            <!-- Spam trap: real people never see or fill this in.
+                 display:none (not off-screen) so browser autofill skips it. -->
+            <div class="hp" aria-hidden="true" style="display:none">
               <label for="_gotcha">Leave this field empty</label>
               <input type="text" id="_gotcha" name="_gotcha" tabindex="-1" autocomplete="off">
             </div>
