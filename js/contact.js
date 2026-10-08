@@ -8,6 +8,14 @@
 
   form.addEventListener("submit", function (e) {
     e.preventDefault();
+
+    // Browser autofill / password managers sometimes fill the hidden spam
+    // trap (_gotcha), which makes Formspree reject real people. A real click
+    // or Enter press is a trusted event, so clear the trap for real visitors.
+    // Bots that post straight to Formspree never run this script.
+    var trap = form.querySelector('[name="_gotcha"]');
+    if (trap && e.isTrusted) trap.value = "";
+
     status.className = "form-status";
     status.textContent = "Sending...";
     btn.disabled = true;
